@@ -1,0 +1,122 @@
+@mixin button {
+    margin-top: 3%;
+    background-color: rgb(0,102, 255);
+    border: none;
+    color: aliceblue;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 5px;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.heade{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 1%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.16);
+}
+.list{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: auto;
+}
+li{
+    margin-right: 15%;
+}
+.con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img{
+    display: flex;
+    width: 80%;
+    margin-top: 3%;
+    align-items: center;
+}
+.image{
+    margin-right: 2%;
+    width: 600px;
+    height: 250px;
+    border-radius: 4px;
+    background-color: rgb(216, 214, 212);
+}
+.te{
+    font-size: 32px;
+}
+.len{
+    font-size: 14px;
+    margin-top: 3%;
+    width: 350px;
+}
+.call{
+    @include button();
+    margin-left: 0%;
+}
+.this{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    font-size: 15px;
+    border-radius: 4px;
+    background-color: rgb(150, 150, 150);
+    color: aliceblue;
+    width: 80%;
+    height: 100px;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 5%;
+}
+.one{
+    border: solid;
+    border-radius: 3px;
+    width: 30%;
+    border-width: 1px;
+    border-color: rgb(112, 112, 112);
+}
+.tone{
+    font-size: 32px;
+    padding-left: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.to{
+    font-size: 14px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.button{
+    margin-top: 10%;
+    background-color: rgb(233, 232, 232);
+}
+button{
+    @include button();
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.foot{
+    position: relative;
+    text-align: center;
+    background-color: rgb(92, 90, 97);
+}
+.copy{
+    position: absolute;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+    background-color: rgb(92, 90, 97);
+}
